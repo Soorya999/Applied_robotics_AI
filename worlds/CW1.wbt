@@ -1,0 +1,94 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Cat.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.139638577018609 -0.14666482113099505 0.9792806023049937 5.130569493630026
+  position -0.6579513166304246 2.5843073767808047 0.8689598778028755
+}
+TexturedBackground {
+  texture "factory"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+SolidBox {
+  translation -0.525857 -0.472947 0.03
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.525857 0.517053 0.03
+  rotation 0 0 1 0.523599
+  name "box(1)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        "1"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.454143 0.007053 0.03
+  name "box(2)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+E-puck {
+  hidden position_0_0 2631.3817685975605
+  hidden position_0_1 2949.150299331041
+  hidden linearVelocity_0 0.00021226880672454117 0.001239332318289901 -0.00019665992503660755
+  hidden angularVelocity_0 -0.08176349953155052 0.02978941128490298 2.2345614337793247
+  hidden rotation_1 0 1 0 1.5757704895030626
+  hidden linearVelocity_1 -0.01889712036755669 -0.053096367417937496 -1.3181024194873376e-06
+  hidden angularVelocity_1 2.885205774679731 -1.0018414466235748 2.2613157626481644
+  hidden rotation_2 0 -0.9999999999999999 0 3.1533038757960554
+  hidden linearVelocity_2 0.01962121350398932 0.05638359962661637 -1.6020906937722267e-07
+  hidden angularVelocity_2 -3.0484545952828586 1.062106641266596 2.2645997994207416
+  translation 0.9005598730992075 0.29501651254346384 -9.555751567623394e-05
+  rotation -0.0010714347670124393 0.001945454066206819 0.9999975336149666 1.280038022274907
+  controller "CW_controller"
+  controllerArgs [
+    ""
+  ]
+  battery [
+    0
+  ]
+}
+Cat {
+  translation 0.13 0.06 0
+  rotation 0 0 1 1.5708
+  scale 0.2
+}
